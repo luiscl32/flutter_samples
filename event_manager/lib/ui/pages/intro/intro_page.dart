@@ -1,3 +1,4 @@
+import 'package:event_manager/ui/common/button_contained.dart';
 import 'package:flutter/material.dart';
 
 class IntroPage extends StatelessWidget {
@@ -5,9 +6,12 @@ class IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text('IntroPage'),
+        child: ButtonContained(
+          buttonText: 'Continue',
+          onPress: () {},
+        ),
       ),
     );
   }
