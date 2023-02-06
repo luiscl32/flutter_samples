@@ -9,5 +9,6 @@ class CustomRouter {
 
   static Map<String, WidgetBuilder> routes = {
     introPage: (BuildContext context) => const IntroPage(),
+    loginPage: (BuildContext context) => const LoginPage(),
   };
 }

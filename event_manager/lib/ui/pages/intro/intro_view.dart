@@ -1,3 +1,4 @@
+import 'package:event_manager/ui/pages/intro/widgets/intro_slider.dart';
 import 'package:flutter/material.dart';
 
 class IntroView extends StatelessWidget {
@@ -5,10 +6,6 @@ class IntroView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('IntroView'),
-      ),
-    );
+    return const IntroSlide();
   }
 }
