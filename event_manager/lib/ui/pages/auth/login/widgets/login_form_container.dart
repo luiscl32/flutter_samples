@@ -1,4 +1,5 @@
 import 'package:event_manager/ui/common/commons.dart';
+import 'package:event_manager/ui/pages/auth/login/handlers/login_handlers.dart';
 import 'package:flutter/material.dart';
 
 class LoginFormContainer extends StatelessWidget {
@@ -7,6 +8,7 @@ class LoginFormContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _theme = Theme.of(context).textTheme;
+    final LoginHandlers _handlers = LoginHandlers(context);
 
     return Form(
       child: Column(
@@ -39,7 +41,7 @@ class LoginFormContainer extends StatelessWidget {
           Align(
             alignment: Alignment.topRight,
             child: CustomTextButton(
-              onPress: () {},
+              onPress: _handlers.navigateToForgotPassword,
               buttonText: 'Forgot password?',
             ),
           ),

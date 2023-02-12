@@ -6,6 +6,9 @@ class IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IntroView();
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: IntroView(),
+    );
   }
 }
