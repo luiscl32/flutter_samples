@@ -5,12 +5,12 @@ class CustomTextTheme {
 
   static const customTextTheme = TextTheme(
     //* body
-    bodyLarge:
-        TextStyle(fontSize: 24, fontWeight: FontWeight.bold, fontFamily: 'SF'),
-    bodyMedium: TextStyle(
-        fontSize: 20, fontWeight: FontWeight.normal, fontFamily: 'SF'),
     bodySmall: TextStyle(
         fontSize: 14, fontWeight: FontWeight.normal, fontFamily: 'SF'),
+    bodyMedium: TextStyle(
+        fontSize: 16, fontWeight: FontWeight.normal, fontFamily: 'SF'),
+    bodyLarge:
+        TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'SF'),
     //* headline
     headlineSmall: TextStyle(
         fontSize: 16, fontWeight: FontWeight.normal, fontFamily: 'SF'),
@@ -20,7 +20,7 @@ class CustomTextTheme {
         TextStyle(fontSize: 28, fontWeight: FontWeight.bold, fontFamily: 'SF'),
     //* title
     titleSmall:
-        TextStyle(fontSize: 24, fontWeight: FontWeight.bold, fontFamily: 'SF'),
+        TextStyle(fontSize: 28, fontWeight: FontWeight.bold, fontFamily: 'SF'),
     titleMedium:
         TextStyle(fontSize: 36, fontWeight: FontWeight.bold, fontFamily: 'SF'),
     titleLarge:

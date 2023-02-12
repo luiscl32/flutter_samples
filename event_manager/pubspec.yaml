@@ -24,6 +24,7 @@ flutter:
     - images/intro/celebrate.svg
     - images/intro/notes.svg
     - images/intro/organize.svg
+    - images/auth/logo.svg
 
   fonts:
     - family: SF

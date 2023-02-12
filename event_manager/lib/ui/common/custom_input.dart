@@ -38,8 +38,13 @@ class _CustomInputState extends State<CustomInput> {
           ),
           prefixIconColor: AppColors.greyMedium,
           labelText: widget.placeholder,
+          labelStyle: _theme.bodyMedium!.copyWith(color: AppColors.greyMedium),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(20),
+            borderSide: BorderSide(color: AppColors.greyOverlay),
           ),
         ),
       ),

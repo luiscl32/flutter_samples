@@ -11,9 +11,6 @@ class LoginFormContainer extends StatelessWidget {
     return Form(
       child: Column(
         children: [
-          const SizedBox(
-            height: 50,
-          ),
           Center(
             child: Text(
               'Log in',
@@ -22,7 +19,7 @@ class LoginFormContainer extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 16,
+            height: 24,
           ),
           CustomInput(
             icon: Icons.person,

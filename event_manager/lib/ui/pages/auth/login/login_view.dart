@@ -1,6 +1,8 @@
+import 'package:event_manager/ui/common/assets.dart';
 import 'package:event_manager/ui/pages/auth/login/widgets/widgets.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -8,6 +10,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 24,
@@ -15,9 +18,22 @@ class LoginView extends StatelessWidget {
         ),
         child: Center(
           child: Column(
-            children: const [
-              LoginFormContainer(),
-              SocialMediaLogin(),
+            children: [
+              const SizedBox(
+                height: 24,
+              ),
+              SvgPicture.asset(
+                Assets.logo,
+              ),
+              const SizedBox(
+                height: 24,
+              ),
+              const LoginFormContainer(),
+              const SocialMediaLogin(),
+              Expanded(child: Container()),
+              RegisterButton(
+                onPress: () {},
+              ),
             ],
           ),
         ),
