@@ -36,11 +36,11 @@ class ButtonContained extends StatelessWidget {
                   Icon(icon, size: 32, color: AppColors.white),
                 Text(
                   buttonText,
-                  style: _textTheme.headlineMedium!.copyWith(
+                  style: _textTheme.bodyMedium!.copyWith(
                     color: AppColors.white,
                   ),
                 ),
-                if (!showIcon && !showIconLeft)
+                if (showIcon && !showIconLeft)
                   Icon(icon, size: 24, color: AppColors.white),
               ],
             ),

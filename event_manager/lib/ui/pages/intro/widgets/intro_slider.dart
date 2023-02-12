@@ -13,7 +13,7 @@ class IntroSlide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme _theme = Theme.of(context).textTheme;
-    double width = MediaQuery.of(context).size.width * 0.8;
+    double width = MediaQuery.of(context).size.width * 0.5;
 
     return IntroductionSlider(
       physics: const BouncingScrollPhysics(),
@@ -73,7 +73,7 @@ class IntroSlide extends StatelessWidget {
         height: 300,
       ),
       title: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Center(
           child: Text(
             title,
@@ -82,7 +82,7 @@ class IntroSlide extends StatelessWidget {
         ),
       ),
       subtitle: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Center(
           child: Text(
             description,
