@@ -21,10 +21,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/intro/celebrate.svg
-    - images/intro/notes.svg
-    - images/intro/organize.svg
-    - images/auth/logo.svg
+    - images/intro/
+    - images/auth/
 
   fonts:
     - family: SF

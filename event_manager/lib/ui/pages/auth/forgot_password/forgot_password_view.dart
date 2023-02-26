@@ -1,3 +1,4 @@
+import 'package:event_manager/ui/pages/auth/forgot_password/widgets/recover_password_form.dart';
 import 'package:flutter/material.dart';
 
 class ForgotPasswordView extends StatelessWidget {
@@ -5,10 +6,6 @@ class ForgotPasswordView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('ForgotPasswordView'),
-      ),
-    );
+    return const RecoverPasswordForm();
   }
 }
