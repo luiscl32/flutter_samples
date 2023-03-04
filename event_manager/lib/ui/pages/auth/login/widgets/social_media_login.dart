@@ -19,7 +19,7 @@ class SocialMediaLogin extends StatelessWidget {
           height: 16,
         ),
         SizedBox(
-          width: MediaQuery.of(context).size.width * 0.4,
+          width: MediaQuery.of(context).size.width * 0.50,
           child: const SocialMedia(),
         )
       ],
@@ -81,7 +81,7 @@ class CustomDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(10),
-      width: 100,
+      width: MediaQuery.of(context).size.width * 0.23,
       color: AppColors.greyLight,
       height: 3,
     );

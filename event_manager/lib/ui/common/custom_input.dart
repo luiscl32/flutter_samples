@@ -22,10 +22,17 @@ class _CustomInputState extends State<CustomInput> {
   @override
   Widget build(BuildContext context) {
     final _theme = Theme.of(context).textTheme;
+
+    final GlobalKey textFieldKey = GlobalKey();
+
     return SizedBox(
       width: double.maxFinite,
       height: 48,
       child: TextField(
+        key: textFieldKey,
+        onTap: () {
+          Scrollable.ensureVisible(textFieldKey.currentContext!);
+        },
         obscureText: widget.obscureText,
         controller: _loginController,
         onChanged: (value) {},

@@ -11,31 +11,43 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 24,
-          vertical: 16,
-        ),
-        child: Center(
-          child: Column(
-            children: [
-              const SizedBox(
-                height: 24,
+      body: SafeArea(
+        child: CustomScrollView(
+          slivers: [
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 16,
+                ),
+                child: Center(
+                  child: Column(
+                    children: [
+                      const SizedBox(
+                        height: 24,
+                      ),
+                      SvgPicture.asset(
+                        Assets.logo,
+                      ),
+                      const SizedBox(
+                        height: 24,
+                      ),
+                      const LoginFormContainer(),
+                      const SocialMediaLogin(),
+                      SizedBox(
+                        height: 230,
+                      ),
+                      Expanded(child: Container()),
+                      RegisterButton(
+                        onPress: () {},
+                      ),
+                    ],
+                  ),
+                ),
               ),
-              SvgPicture.asset(
-                Assets.logo,
-              ),
-              const SizedBox(
-                height: 24,
-              ),
-              const LoginFormContainer(),
-              const SocialMediaLogin(),
-              Expanded(child: Container()),
-              RegisterButton(
-                onPress: () {},
-              ),
-            ],
-          ),
+            )
+          ],
         ),
       ),
     );
