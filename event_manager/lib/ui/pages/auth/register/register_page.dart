@@ -1,3 +1,5 @@
+import 'package:event_manager/ui/common/commons.dart';
+import 'package:event_manager/ui/pages/auth/register/register_view.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -5,10 +7,9 @@ class RegisterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('RegisterPage'),
-      ),
+    return Scaffold(
+      appBar: CustomAppbar(),
+      body: RegisterView(),
     );
   }
 }
