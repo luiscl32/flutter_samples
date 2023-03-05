@@ -62,7 +62,7 @@ class DividerText extends StatelessWidget {
       children: [
         const CustomDivider(),
         Text(
-          'Or login with',
+          'Or sign up with',
           style: _theme.bodyMedium!.copyWith(
               color: AppColors.greyMedium, fontWeight: FontWeight.bold),
         ),

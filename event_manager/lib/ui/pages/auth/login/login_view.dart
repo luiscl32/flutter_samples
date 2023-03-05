@@ -1,4 +1,5 @@
 import 'package:event_manager/ui/common/assets.dart';
+import 'package:event_manager/ui/pages/auth/login/handlers/login_handlers.dart';
 import 'package:event_manager/ui/pages/auth/login/widgets/widgets.dart';
 
 import 'package:flutter/material.dart';
@@ -9,6 +10,8 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final _handlers = LoginHandlers(context);
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SafeArea(
@@ -40,7 +43,7 @@ class LoginView extends StatelessWidget {
                       ),
                       Expanded(child: Container()),
                       RegisterButton(
-                        onPress: () {},
+                        onPress: _handlers.navigateToRegister,
                       ),
                     ],
                   ),

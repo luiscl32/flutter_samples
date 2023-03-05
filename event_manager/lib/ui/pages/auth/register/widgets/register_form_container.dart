@@ -8,12 +8,23 @@ class RegisterFormContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final _theme = Theme.of(context).textTheme;
+
     return Form(
         child: Column(
       children: [
         SvgPicture.asset(Assets.logo),
         const SizedBox(
           height: 16,
+        ),
+        Center(
+          child: Text(
+            'Sign up',
+            style: _theme.headlineLarge!.copyWith(fontWeight: FontWeight.bold),
+          ),
+        ),
+        const SizedBox(
+          height: 24,
         ),
         CustomInput(icon: Icons.person, placeholder: 'Username'),
         const SizedBox(

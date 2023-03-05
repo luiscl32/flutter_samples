@@ -9,4 +9,8 @@ class LoginHandlers {
   void navigateToForgotPassword() {
     Navigator.pushNamed(context, CustomRouter.forgotPasswordPage);
   }
+
+  void navigateToRegister() {
+    Navigator.pushNamed(context, CustomRouter.registerPage);
+  }
 }

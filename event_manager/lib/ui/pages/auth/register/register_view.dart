@@ -10,6 +10,7 @@ class RegisterView extends StatelessWidget {
     return CustomScrollView(
       slivers: [
         SliverFillRemaining(
+          hasScrollBody: false,
           child: Padding(
             padding: const EdgeInsetsDirectional.symmetric(
                 vertical: 24, horizontal: 16),
