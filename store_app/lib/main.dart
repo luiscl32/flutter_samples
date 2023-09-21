@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/presentation/config/router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,16 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const SizedBox(
-        child: Center(
-          child: Text('store app'),
-        ),
-      ),
+          scaffoldBackgroundColor: Colors.white,
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.purple,
+          )),
+      routes: CustomRouter.router,
+      initialRoute: ScreenPaths.dashboard,
     );
   }
 }
