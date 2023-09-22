@@ -30,5 +30,9 @@ class CustomTheme {
   CustomTheme._();
   static ThemeData theme = ThemeData(
     scaffoldBackgroundColor: const Color(ColorsPallete.backgroundWhite),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Color(ColorsPallete.backgroundWhite),
+      elevation: 0,
+    ),
   );
 }

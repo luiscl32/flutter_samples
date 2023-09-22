@@ -6,17 +6,16 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(child: Container()),
-        Center(
-          child: CustomButton(
-            buttonText: 'Press me!',
-            onPressed: () {},
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        children: [
+          SizedBox(
+            height: 16,
           ),
-        ),
-        Expanded(child: Container()),
-      ],
+          CustomSearchbar(),
+        ],
+      ),
     );
   }
 }
