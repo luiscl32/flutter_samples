@@ -10,6 +10,7 @@ class DashboardPage extends StatelessWidget {
     return const Scaffold(
       appBar: CustomAppbar(),
       body: DashboardView(),
+      bottomNavigationBar: CustomNavigatorBar(),
     );
   }
 }

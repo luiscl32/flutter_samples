@@ -8,12 +8,16 @@ class DashboardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
-      child: Column(
-        children: [
-          SizedBox(
-            height: 16,
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 16,
+            ),
           ),
-          CustomSearchbar(),
+          SliverToBoxAdapter(
+            child: CustomSearchbar(),
+          ),
         ],
       ),
     );

@@ -12,7 +12,7 @@ class CustomSearchbar extends StatelessWidget {
       decoration: BoxDecoration(
           color: const Color(ColorsPallete.background),
           borderRadius: BorderRadius.circular(100)),
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 8),
       child: TextField(
         onChanged: (value) => {},
         decoration: const InputDecoration(
